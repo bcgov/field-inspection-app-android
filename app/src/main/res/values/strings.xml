@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">EAO Android</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="eao_android">EAO Android</string>
+    <string name="settings">Settings</string>
+    <string name="inspection_set_up">Inspection Set Up</string>
+    <string name="project_list">Project List</string>
+
+    //Login
+    <string name="you_need_internet_to_login">You need an internet connection to login</string>
+    <string name="error_login">Please contact your Administrator to change your user credentials.</string>
+    <string name="okay">Okay</string>
+
+    //Settings
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_services">Terms of Services</string>
+    <string name="about_app">About App</string>
+    <string name="eao_project_website">EAO Project Website</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="logout">Logout</string>
+    <string name="eao_website">http://www.eao.gov.bc.ca/</string>
+    <string name="title_activity_maps">Map</string>
+
+    //Inspection
+    <string name="in_progress">IN PROGRESS</string>
+    <string name="submitted">SUBMITTED</string>
+    <string name="add_new_inspection">ADD NEW INSPECTION</string>
+    <string name="no_inspections_submitted">No Inspections submitted</string>
+    <string name="no_inspections_in_progress">No Inspections in progress</string>
+    <string name="you_need_internet_to_upload">You need an internet connection to upload</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="you_will_not_be_able_to_edit_after_submission">You will NOT be able to edit this inspection after submission</string>
+    <string name="yes">Yes</string>
+
+    //New Inspection
+    <string name="link_project">Link Project</string>
+    <string name="title">Title</string>
+    <string name="inspector">Inspector</string>
+    <string name="inspection_number">Inspection Number</string>
+    <string name="inspection_start_date">Inspection Start Date</string>
+    <string name="inspection_end_date">Inspection End Date</string>
+    <string name="add_inspection">ADD INSPECTION</string>
+    <string name="please_fill_out_project_fields">Please fill out project field</string>
+    <string name="please_fill_out_title_fields">Please fill out title field</string>
+    <string name="please_fill_out_inspector_fields">Please fill out inspector field</string>
+    <string name="please_fill_out_inspector_number_fields">Please fill out inspector number field</string>
+    <string name="please_fill_out_start_date_fields">Please fill out start date field</string>
+    <string name="please_fill_out_end_date_fields">Please fill out end date field</string>
+
+    //Project List
+    <string name="search_by_project_name">Search by project name</string>
+    <string name="project_name">Project Name</string>
+    <string name="add_project_name_here">Add project name here</string>
+    <string name="cancel">Cancel</string>
+
+    //Observation Elements
+    <string name="observation_elements">Observation Elements</string>
+    <string name="edit_inspection_set_up">Edit Inspection Set Up</string>
+    <string name="submit">Submit</string>
+</resources>

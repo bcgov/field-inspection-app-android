@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.freshworks.eao.screens.newinspection.NewInspectionActivity">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_with_back"
+        />
+
+    <TextView
+        android:id="@+id/linkProjectTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toTopOf="@id/titleEt"
+        app:layout_constraintVertical_chainStyle="spread"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/link_project"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/ic_arrow_forward_black_24dp" />
+
+    <EditText
+        android:id="@+id/titleEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/linkProjectTv"
+        app:layout_constraintBottom_toTopOf="@id/inspectorEt"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/title"
+        android:textColor="@color/black"
+        android:maxLength="64"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/inspectorEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/titleEt"
+        app:layout_constraintBottom_toTopOf="@id/inspectionNumEt"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/inspector"
+        android:textColor="@color/black"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+        android:inputType="text"
+        android:maxLength="64" />
+
+    <EditText
+        android:id="@+id/inspectionNumEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/inspectorEt"
+        app:layout_constraintBottom_toTopOf="@id/inspectionStartDateTv"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/inspection_number"
+        android:textColor="@color/black"
+        android:imeOptions="actionDone"
+        android:maxLines="1"
+        android:inputType="text"
+        android:maxLength="64" />
+
+    <TextView
+        android:id="@+id/inspectionStartDateTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/inspectionNumEt"
+        app:layout_constraintBottom_toTopOf="@id/inspectionEndDateTv"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:inputType="date"
+        android:textSize="18sp"
+        android:hint="@string/inspection_start_date"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/ic_arrow_forward_black_24dp"/>
+
+    <TextView
+        android:id="@+id/inspectionEndDateTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/inspectionStartDateTv"
+        app:layout_constraintBottom_toTopOf="@id/addInspectionBtn"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:inputType="date"
+        android:textSize="18sp"
+        android:hint="@string/inspection_end_date"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/ic_arrow_forward_black_24dp"/>
+
+    <Button
+        android:id="@+id/addInspectionBtn"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:text="@string/add_inspection"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "io.freshworks.eao"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    flavorDimensions "app"
+    productFlavors {
+        prod {
+            resValue "string", "api_domain", "https://projects.eao.gov.bc.ca"
+            buildConfigField("String", "API_DOMAIN", "\"https://projects.eao.gov.bc.ca\"")
+        }
+    }
+}
+
+ext {
+    boltsVersion = '1.4.0'
+    constraintLayoutVersion = '1.0.2'
+    espressoVersion = '3.0.1'
+    jUnitVersion = '4.12'
+    okHttpVersion = '3.9.1'
+    parseVersion = '1.16.5'
+    playServicesVersion = '11.8.0'
+    retrofitVersion = '2.3.0'
+    supportLibraryVersion = '26.1.0'
+    testRunnerVersion = '1.0.1'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+
+    implementation "com.android.support.constraint:constraint-layout:$constraintLayoutVersion"
+
+    implementation "com.android.support:appcompat-v7:$supportLibraryVersion"
+    implementation "com.android.support:customtabs:$supportLibraryVersion"
+    implementation "com.android.support:design:$supportLibraryVersion"
+    implementation "com.android.support:support-v4:$supportLibraryVersion"
+
+    implementation "com.google.android.gms:play-services-maps:$playServicesVersion"
+
+    implementation "com.parse.bolts:bolts-applinks:$boltsVersion"
+    implementation "com.parse.bolts:bolts-tasks:$boltsVersion"
+
+    implementation "com.parse:parse-android:$parseVersion"
+
+    implementation "com.squareup.okhttp3:okhttp:$okHttpVersion"
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+
+    testImplementation "junit:junit:$jUnitVersion"
+
+    androidTestImplementation "com.android.support.test:runner:$testRunnerVersion"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:$espressoVersion"
+}

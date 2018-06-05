@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="io.freshworks.eao.screens.inspections.InspectionsActivity"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_with_back"
+        />
+
+    <Button
+        android:id="@+id/privacyPolicyBtn"
+        style="@style/SettingsButton"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="@string/privacy_policy"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/privacyPolicyBtn"/>
+
+    <Button
+        android:id="@+id/termsOfServiceBtn"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/privacyPolicyBtn"
+        android:text="@string/terms_of_services"
+        style="@style/SettingsButton"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/termsOfServiceBtn" />
+
+    <Button
+        android:id="@+id/aboutAppBtn"
+        style="@style/SettingsButton"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="@string/about_app"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/termsOfServiceBtn" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="192dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutAppBtn"/>
+
+    <Button
+        android:id="@+id/projectWebsiteBtn"
+        style="@style/SettingsButton"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="@string/eao_project_website"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="192dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutAppBtn"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/projectWebsiteBtn" />
+
+    <Button
+        android:id="@+id/contactUsBtn"
+        style="@style/SettingsButton"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="@string/contact_us"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="256dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/projectWebsiteBtn"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactUsBtn" />
+
+    <Button
+        android:id="@+id/termsOfUseBtn"
+        style="@style/SettingsButton"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="@string/terms_of_use"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="320dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactUsBtn"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/termsOfUseBtn" />
+
+    <Button
+        android:id="@+id/logoutBtn"
+        style="@style/SettingsButton"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="@string/logout"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="384dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/termsOfUseBtn"/>
+
+</android.support.constraint.ConstraintLayout>
+
